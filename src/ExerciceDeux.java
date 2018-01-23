@@ -20,6 +20,9 @@ public class ExerciceDeux extends JFrame {
 
         exoDeux.setBackground(Color.DARK_GRAY);
 
+        // Definition de la grille
+        this.setLayout(new GridLayout(2, 4));
+
         // Déclaration et initialisation des variables
         int a;
         a = 5;
@@ -28,7 +31,7 @@ public class ExerciceDeux extends JFrame {
         int c;
         c = 0;
         // Affichage du contenu des variables
-        JLabel labA = new JLabel("Le contenu des variables est :");
+        JLabel labA = new JLabel("Avant :");
         JLabel labB = new JLabel("a = " + a);
         JLabel labC = new JLabel("b = " + b);
         JLabel labD = new JLabel("c = " + c);
@@ -44,7 +47,7 @@ public class ExerciceDeux extends JFrame {
         b = c;
 
         // Affichage du contenu des variables
-        JLabel labE = new JLabel("Le nouveau contenu des variables est :");
+        JLabel labE = new JLabel("Apres :");
         JLabel labF = new JLabel("a = " + a);
         JLabel labG = new JLabel("b = " + b);
         JLabel labH = new JLabel("c = " + c);

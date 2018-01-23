@@ -18,8 +18,11 @@ public class ExerciceUn extends JFrame {
         this.setContentPane( exoUn );
         // Rendre la fenetre visible
         this.setVisible(true);
-
+        // Defini la couleur de fond du JPanel
         exoUn.setBackground(Color.DARK_GRAY);
+
+        // Definition de la grille
+        this.setLayout(new GridLayout(2, 1));
 
         // Déclaration des Strings
         String sad;
@@ -29,9 +32,11 @@ public class ExerciceUn extends JFrame {
         sad = "Au revoir monde cruel";
         happy = "Hello World !";
 
+        // Ajout du contenu des JLabel
         JLabel a = new JLabel(sad);
         JLabel b = new JLabel(happy);
 
+        // Ajout des JLabel au JPanel
         exoUn.add(a);
         exoUn.add(b);
     }
